@@ -1,6 +1,9 @@
 package com.epam.algorithms;
 
 
+import java.util.Arrays;
+import java.util.Comparator;
+
 /**
  * Here are the tasks for working with the arrays.
  * <p>
@@ -122,7 +125,11 @@ public class ArrayTasks {
      * arr = [[3, 1, 2,], [3,2]] -> [[2, 3], [1, 2, 3]] arr = [[5, 4], [7]]       -> [[7], [4, 5]]
      */
     public int[][] sortRaggedArray(int[][] arr) {
-        return null;
+        Arrays.sort(arr, Comparator.comparingInt(a -> a.length));
+        for (int[] subArray : arr) {
+            Arrays.sort(subArray);
+        }
+        return arr;
     }
 
 }
