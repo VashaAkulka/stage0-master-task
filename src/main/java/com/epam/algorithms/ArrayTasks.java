@@ -1,5 +1,8 @@
 package com.epam.algorithms;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 /**
  * Here are the tasks for working with the arrays.
  * <p>
@@ -100,12 +103,13 @@ public class ArrayTasks {
 
         int[] newArr = new int[count];
         int j = 0;
-        for (int i = 0; i < count; i++) {
-            if (arr[i] > 0) {
-                newArr[j] = arr[i];
+        for(int num: arr) {
+            if (num > 0) {
+                newArr[j] = num;
                 j++;
             }
         }
+
 
         return newArr;
     }

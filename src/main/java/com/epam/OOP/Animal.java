@@ -17,4 +17,5 @@ public class Animal {
         else System.out.print("no");
         System.out.print(" fur.");
     }
+
 }
