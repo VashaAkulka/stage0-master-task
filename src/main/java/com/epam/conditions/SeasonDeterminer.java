@@ -20,7 +20,7 @@ public class SeasonDeterminer {
             case 6:
             case 7:
             case 8:
-                System.out.println("Summer ");
+                System.out.println("Summer");
                 break;
             case 9:
             case 10:
